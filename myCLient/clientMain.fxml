@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myCLient.clientMain">
+<children>
+    <Label layoutX="41.0" layoutY="143.0" prefHeight="26.0" prefWidth="96.0" text="Username:" textFill="#ea0606">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+    <TextField fx:id="userText" layoutX="139.0" layoutY="138.0" prefHeight="40.0" prefWidth="359.0" promptText="Enter Company Name">
+         <font>
+            <Font size="18.0" />
+         </font></TextField>
+    <ButtonBar layoutX="137.0" layoutY="193.0" prefHeight="40.0" prefWidth="200.0" />
+      <Label fx:id="warningText" layoutX="140.0" layoutY="158.0" prefHeight="18.0" prefWidth="96.0" />
+      <Button fx:id="resetButton" layoutX="498.0" layoutY="138.0" mnemonicParsing="false" onAction="#resetAction" prefHeight="40.0" prefWidth="54.0" text="Reset" textFill="#0062f0" />
+      <Button fx:id="loginButton" defaultButton="true" layoutX="235.0" layoutY="259.0" mnemonicParsing="false" onAction="#loginAction" prefHeight="30.0" prefWidth="129.0" text="Login">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="loginButton1" layoutX="484.0" layoutY="334.0" mnemonicParsing="false" onAction="#exitAction" prefHeight="30.0" prefWidth="89.0" text="EXIT" underline="true" />
+      <Label layoutX="122.0" layoutY="42.0" prefHeight="55.0" prefWidth="393.0" text="WELCOME TO MOVIE DATABASE" textFill="#d13131">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+</children>
+</AnchorPane>

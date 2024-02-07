@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myCLient.TransferMovieController">
+   <children>
+      <Button layoutX="499.0" layoutY="344.0" mnemonicParsing="false" onAction="#onTransferMovieBackClick" prefHeight="30.0" prefWidth="69.0" text="Back" />
+      <TextField fx:id="movieTitleToTransfer" layoutX="300.0" layoutY="82.0" prefHeight="40.0" prefWidth="269.0" promptText="Movie Title">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label layoutX="300.0" layoutY="47.0" text="Enter Movie Name:" textFill="#034389">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="300.0" layoutY="139.0" text="Enter Company Name to Transfer:" textFill="#db3d3d">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="companyNameToTransfer" layoutX="300.0" layoutY="178.0" prefHeight="40.0" prefWidth="269.0" promptText="Production Company">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button defaultButton="true" layoutX="376.0" layoutY="266.0" mnemonicParsing="false" onAction="#onTransferMovieClick" prefHeight="40.0" prefWidth="94.0" text="Transfer">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="498.0" layoutY="36.0" mnemonicParsing="false" onAction="#onResetAddInformationClick" prefHeight="6.0" prefWidth="58.0" text="Reset">
+         <font>
+            <Font size="10.0" />
+         </font>
+      </Button>
+      <TableView fx:id="transferMoviesTable" layoutX="45.0" layoutY="53.0" prefHeight="314.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="transferMoviesTableTitleCol" prefWidth="199.19999313354492" text="All Movies" />
+        </columns>
+      </TableView>
+      <Button defaultButton="true" layoutX="60.0" layoutY="23.0" mnemonicParsing="false" onAction="#onTransferMovieLoadClick" prefHeight="11.0" prefWidth="170.0" text="Load Compny Movie List" />
+   </children>
+</AnchorPane>

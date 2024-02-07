@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="628.0" prefWidth="1015.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="myCLient.SearchOptionController">
+<children>
+    <TextField fx:id="toInputTitle" layoutX="176.0" prefHeight="30.0" prefWidth="134.0" promptText="Movie Title">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </TextField>
+    <Button layoutX="957.0" mnemonicParsing="false" onAction="#onSearchByRunTimeClick" prefHeight="30.0" prefWidth="66.0" text="Search">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Button>
+    <TableView fx:id="searchMoviesTable" layoutX="61.0" layoutY="104.0" prefHeight="355.0" prefWidth="860.0">
+        <columns>
+            <TableColumn fx:id="searchMoviesTableTitleCol" prefWidth="172.99999237060547" text="Title" />
+            <TableColumn fx:id="searchMoviesTableYearCol" prefWidth="75.0" text="Year" />
+            <TableColumn fx:id="searchMoviesTableG1Col" prefWidth="109.19998168945312" text="Genre 1" />
+            <TableColumn fx:id="searchMoviesTableG2Col" prefWidth="95.79998779296875" text="Genre 2" />
+            <TableColumn fx:id="searchMoviesTableG3Col" prefWidth="97.00003051757812" text="Genre 3" />
+            <TableColumn fx:id="searchMoviesTableTimeCol" prefWidth="78.5999755859375" text="RunTime" />
+            <TableColumn fx:id="searchMoviesTableBudgetCol" prefWidth="113.79998779296875" text="Budget" />
+            <TableColumn fx:id="searchMoviesTableRevenueCol" prefWidth="130.20001220703125" text="Revenue" />
+        </columns>
+    </TableView>
+    <Button layoutX="898.0" layoutY="556.0" mnemonicParsing="false" onAction="#onSearchMoviesBackClick" text="Back">
+        <font>
+            <Font size="14.0" />
+        </font>
+    </Button>
+      <Button layoutX="503.0" mnemonicParsing="false" onAction="#onSearchByYearClick" prefHeight="30.0" prefWidth="66.0" text="Search">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="308.0" mnemonicParsing="false" onAction="#onSearchByMovieTitleClick" prefHeight="30.0" prefWidth="65.0" text="Search">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="toInputYear" layoutX="400.0" prefHeight="30.0" prefWidth="103.0" promptText="Release Year">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="toInputGenre" layoutX="591.0" layoutY="-1.0" prefHeight="30.0" prefWidth="134.0" promptText="Movie Genre">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button layoutX="725.0" layoutY="-1.0" mnemonicParsing="false" onAction="#onSearchByMovieGenreClick" prefHeight="30.0" prefWidth="66.0" text="Search">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="toInputTime" layoutX="815.0" prefHeight="30.0" prefWidth="141.0" promptText="Min Time-Max time">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button layoutX="-8.0" mnemonicParsing="false" onAction="#onSearchAllMoviesyClick" prefHeight="30.0" prefWidth="148.0" text="ShowAllMovies">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="toInputForDelete" layoutX="161.0" layoutY="562.0" prefHeight="30.0" prefWidth="180.0" promptText="Enter Movie Title">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button layoutX="95.0" layoutY="562.0" mnemonicParsing="false" onAction="#onMovieDeleteClick" prefHeight="30.0" prefWidth="65.0" text="Delete" textFill="#d70000">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+</children>
+</AnchorPane>
